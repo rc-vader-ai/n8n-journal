@@ -2,8 +2,6 @@
 
 A comprehensive walkthrough for deploying n8n—a powerful workflow automation platform—using Docker. Whether you're new to containerization or automation workflows, this guide breaks down each step into manageable, understandable concepts.
 
-**Reference:** [osher.com.au/blog/how-to-host-n8n-with-docker](https://osher.com.au/blog/how-to-host-n8n-with-docker/#configuring-n8n-for-production-use)
-
 ---
 
 ## Part 1: Setting Up Docker
