@@ -75,7 +75,7 @@ After creating the tunnel, Cloudflare provides installation instructions. You'll
 ```bash
 # Example (do NOT use this—copy yours from Cloudflare)
 docker run -d --network n8n-network cloudflare/cloudflared:latest \
-  tunnel --no-autoupdate run --token eyJhIjoiXyIsInQiOiJfIiwicyI6Il9fIn0=
+  tunnel --no-autoupdate run --token <your-cloudflare-tunnel-token>
 ```
 
 The part after `--token` is your **unique tunnel token**. This is a long string of characters that authenticates your Docker container with Cloudflare.
@@ -146,8 +146,6 @@ Instead of running multiple `docker run` commands, use Docker Compose to manage 
 **Create `docker-compose.yml` in your project directory:**
 
 ```yaml
-version: '3.8'
-
 services:
   # n8n Service
   n8n:
@@ -206,9 +204,6 @@ services:
     
     networks:
       - n8n-network
-    
-    depends_on:
-      - n8n
 
 # Persistent volume for n8n data (workflows, credentials, execution history)
 volumes:
@@ -446,7 +441,7 @@ N8N_PROTOCOL=https
 **Wrong:**
 ```yaml
 environment:
-  - TUNNEL_TOKEN=eyJhIjoiXyIsInQiOiJfIiwicyI6Il9fIn0=
+  - TUNNEL_TOKEN=<your-cloudflare-tunnel-token>
 ```
 
 **Correct:**
