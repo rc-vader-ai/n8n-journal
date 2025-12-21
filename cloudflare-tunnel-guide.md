@@ -14,6 +14,7 @@ Before diving into the setup, let's understand what you're building:
 - No open firewall ports (safer and simpler than port forwarding)
 
 **The Solution:** Cloudflare Tunnel creates an **encrypted, outbound-only connection** from your local machine to Cloudflare's servers. When someone visits your public domain, Cloudflare safely routes the traffic back through the tunnel to your local n8n.
+<img width="2400" height="2000" alt="cloudflare_tunnel_setup" src="https://github.com/user-attachments/assets/bd2fb6b6-7cef-4425-b261-18beca964793" />
 
 **Why This Works:**
 - Your machine initiates the connection to Cloudflare (not the other way around)
