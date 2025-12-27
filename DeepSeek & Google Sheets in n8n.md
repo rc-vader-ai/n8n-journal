@@ -90,7 +90,7 @@ By documenting this, you avoid wasting an afternoon on authentication trivia and
 
 <div align="center">⁂</div>
 
-[^1]: Get-Started-with-Google-Sheets-in-n8n.md
+[^1]: https://github.com/rc-vader-ai/n8n-journal/blob/main/n8n-google-sheets-complete-guide.md
 
-[^2]: md
+[^2]: https://n8npro.in/integrations/n8n-google-sheets-understanding-required-api-permissions/
 
