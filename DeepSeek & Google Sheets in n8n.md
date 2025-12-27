@@ -1,11 +1,3 @@
-<img src="https://r2cdn.perplexity.ai/pplx-full-logo-primary-dark%402x.png" style="height:64px;margin-right:32px"/>
-
-# Rewrite as markdown format
-
-Based on the attached file, here is the rewritten content in a clean, structured Markdown format. I have removed the prompt instructions ("Act as experience writer...") and organized the journal entry into clear sections with proper code formatting for the technical details.
-
-***
-
 # DeepSeek \& Google Sheets in n8n: Fixing the OAuth Scopes
 
 Swapped OpenAI for DeepSeek, hit a 403 with Google Sheets, fixed it by tightening up scopes, and turned the whole thing into a reusable guide you can drop into any n8n stack.
@@ -100,5 +92,5 @@ By documenting this, you avoid wasting an afternoon on authentication trivia and
 
 [^1]: Get-Started-with-Google-Sheets-in-n8n.md
 
-[^2]: https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/collection_07cb6b35-bb76-4405-9882-9df4b2828044/1d11fc81-8fda-42b0-a576-e49af933638c/Cloudflare-Zero-Trust-Network-Tunnel-with-Docker-n-2c933a6c2f2680c9a2aadf4f297665b6.md
+[^2]: md
 
