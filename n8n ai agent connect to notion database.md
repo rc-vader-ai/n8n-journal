@@ -58,15 +58,15 @@ This node will act as the "hand" the AI uses to save data.
     * **Operation:** `Create`
     * **Database:** Click the dropdown. If you shared it correctly in Step 1, "Knowledge Database" should appear. Select it.
 3. **Map Fields (Data Requirements):**
-You will see the properties from your database appear. Configure them as follows to match your requirements:[^4][^5]
-| Notion Property | n8n Field Setting | Configuration / Expression |
-| :-- | :-- | :-- |
-| **Name** (Title) | **Title** | Map to the Article Title (e.g., from AI input). |
-| **URL** (URL) | **URL** | Map to the Article Link. |
-| **Description** (Text) | **Description** | Map to the AI-generated summary. |
-| **Tags** (Multi-select) | **Tags** | **For dynamic tags:** Toggle "Expression" mode. Pass an array of strings, e.g., `{{ ['AI', 'Tech'] }}`. If the AI outputs a comma-separated string, use `.split(',')`. |
-| **Publication Date** | **Publication Date** | Use ISO 8601 format (e.g., `2025-12-27`). If the AI gives a fuzzy date like "today", use the **Date \& Time** node before this to format it strictly. |
+You will see the properties from your database appear. Configure them as follows to match your requirements:
 
+| Notion Property     | n8n Field Setting | Configuration / Expression                                                                                                                                     |
+| ------------------- | ----------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Name (Title)        | Title             | Map to the Article Title (e.g., from AI input).                                                                                                                |
+| URL (URL)           | URL               | Map to the Article Link.                                                                                                                                       |
+| Description (Text)  | Description       | Map to the AI-generated summary.                                                                                                                               |
+| Tags (Multi-select) | Tags              | For dynamic tags: Toggle "Expression" mode. Pass an array of strings, e.g., {{ ['AI', 'Tech'] }}. If the AI outputs a comma-separated string, use .split(','). |
+| Publication Date    | Publication Date  | Use ISO 8601 format (e.g., 2025-12-27). If the AI gives a fuzzy date like "today", use the Date & Time node before this to format it strictly.                 |
 *Tip: If fields don't appear automatically, click "Refresh List" at the top of the node properties.*
 
 #### **Step 4: Connect to the AI Agent**
